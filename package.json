@@ -7,5 +7,14 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Hallur Kárason Nielsen",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hallurkn/react-boilerplate.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/Hallurkn/react-boilerplate/issues"
+  },
+  "homepage": "https://github.com/Hallurkn/react-boilerplate#readme"
 }
