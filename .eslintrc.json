@@ -28,5 +28,8 @@
         "ecmaVersion": 2018,
         "sourceType": "module"
     },
-    "plugins": ["react", "jsx-a11y"]
+    "rules": {
+        "simple-import-sort/sort": "error"
+    },
+    "plugins": ["react", "jsx-a11y", "simple-import-sort"]
 }
