@@ -1,5 +1,9 @@
+import './styles/app.scss'
+
 import React, { Component } from 'react'
 import { hot } from 'react-hot-loader'
+
+import Test from './components/Test'
 
 // const Warning = React.lazy(() => import('./Warning'))
 // <React.Suspense fallback={null}>
@@ -11,6 +15,7 @@ class App extends Component {
         return (
             <div>
                 <h1>Hello world</h1>
+                <Test />
             </div>
         )
     }
