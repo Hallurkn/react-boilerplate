@@ -15,8 +15,23 @@ module.exports = {
                 exclude: /node_modules/
             },
             {
-                test: /\.scss$/,
-                use: ['style-loader', 'css-loader', 'sass-loader'],
+                test: /\.(scss)$/,
+                use: [
+                    {
+                        loader: 'style-loader'
+                    },
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            sourceMap: true,
+                            modules: true,
+                            localIdentName: '[local]___[hash:base64:5]'
+                        }
+                    },
+                    {
+                        loader: 'sass-loader'
+                    }
+                ],
                 exclude: /node_modules/
             }
         ]
