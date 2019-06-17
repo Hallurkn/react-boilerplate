@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
     mode: 'production',
-    entry: './src/index.js',
+    entry: './index.js',
     output: {
         path: path.join(__dirname, 'dist'),
         filename: 'app.bundle.js'
@@ -16,8 +16,8 @@ module.exports = {
                 exclude: /node_modules/
             },
             {
-                test: /\.css$/,
-                use: ['style-loader', 'css-loader'],
+                test: /\.scss$/,
+                use: ['style-loader', 'css-loader', 'sass-loader'],
                 exclude: /node_modules/
             }
         ]

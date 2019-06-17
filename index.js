@@ -1,11 +1,11 @@
 import '@babel/polyfill'
-import './styles.css'
+import './src/styles.scss'
 
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import App from './App'
-import DefaultErrorBoundary from './DefaultErrorBoundary'
+import App from './src/App'
+import DefaultErrorBoundary from './src/DefaultErrorBoundary'
 
 if (process.env.NODE_ENV === 'development') {
     const axe = require('react-axe')
